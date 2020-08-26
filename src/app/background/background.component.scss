@@ -1,0 +1,61 @@
+    .title{
+
+        // position: relative;
+        // top: 20%;
+        color: #070616;
+     
+        h1{
+            margin: 0;
+            color: #090542;
+        }
+
+        p{
+            // padding:0 5px;
+            // color: rgba(0, 0, 0, 0.767);
+            color: #090542;
+
+        }
+
+        button{
+            padding: 15px 25px;
+            color: white;
+            background-color:#7474ffc9;
+            border: none;
+
+            &:hover{
+                background-color: #7474ff;
+                color: white;
+            }
+        }
+
+    }
+
+
+
+
+
+
+    @keyframes transition {
+        
+        0%{
+            opacity: 0;
+            
+        }
+        50%{
+            opacity: 0.7;
+            
+        }
+
+        50%{
+            opacity: 0.8;
+            
+        }
+        
+
+        100%{
+            opacity: 1;
+            
+        }
+     
+
+    }

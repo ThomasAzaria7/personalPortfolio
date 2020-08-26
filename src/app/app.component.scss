@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+}
+nav{
+    position: fixed;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 10%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+
+    h2{
+        color: #49499b;
+    }
+
+    ul {
+
+        overflow: hidden;
+        list-style-type: none;
+        display: block;
+        position: relative;
+        width: 100%;
+        top: 10px;
+
+
+        .downloadResume{
+            background-color: #090542;
+            padding: 4px;
+            box-sizing: border-box;
+
+            &:hover{
+            background-color: #090542e3;
+
+            }
+
+            &:active{
+                background-color: #090542c5;
+    
+            }
+
+
+            a{
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+                
+
+
+            }
+        }
+        
+        li{
+            float: left;
+            a{
+                padding: 16px 18px;
+                text-decoration: none;
+
+            }
+        }
+    }
+  
+}
+
+#intro{
+
+    // background-color: rgba(18, 68, 53, 0.13);
+    background: linear-gradient(90deg, #e3ffe74d 0%, #d9e7ff 100%);
+    // background-color: rgba(141, 8, 8, 0.233);
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding: 0 10% ;
+    animation: transition 3s ease-in-out;
+
+    .intro__outputInfo{
+
+        position: relative;
+        top: 18%;
+        font-size: 2rem;
+        width: 100%;
+        height: 80vh;
+   
+
+    }
+    .photo{
+
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/thomasazaria07.appspot.com/o/portfolioPic.png?alt=media&token=bd26a211-c7ea-44c7-9120-275b81cf7644");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 77% 0;
+        // background-color: green;
+        position: relative;
+        // right: 0px;
+        width: 100%;
+        padding: 50px;
+        margin: 0;
+        box-sizing: border-box;
+     
+    }
+}
+
+#aboutMe{
+    // background-color: rgba(233, 233, 233, 0.541);
+    // background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    background: linear-gradient(90deg, rgba(45, 1, 116, 0.219) 0%, hsla(0, 0%, 100%, 0.082) 50%);
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding:  0 10%;
+    position: sticky;
+    top: 60px;
+    animation: transition 3s ease-in-out;
+
+
+    .aboutMe__Photo{
+        height: 100%;
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/thomasazaria07.appspot.com/o/portfolioPic2.png?alt=media&token=8148683f-d988-4559-9525-1fe0240fe4c4');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 77% 0;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    }
+
+    .aboutMe__content{
+        position: relative;
+        margin: 5%;
+        box-sizing: border-box;
+        color: 090542;
+    }
+
+
+}
+
+#skills{
+    // background-color: #4848a191;
+    height: 20vh;
+    padding: 0 15%;
+    background: linear-gradient(90deg, #00d0ff49 0%, #3a47d5d0 100%);
+    box-sizing: border-box;
+
+        .skills__innerContainer{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            
+            div {
+            &:nth-child(1) {
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+                    margin: 50px;
+
+                    i{
+                        font-size: 50px;
+
+                    }
+
+                    h3{
+                        margin: 10px;
+                    }
+
+            }
+
+            &:nth-child(2) {
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+                    margin: 50px;
+
+                    i{
+                        font-size: 50px;
+
+                    }
+
+                    h3{
+                        margin: 10px;
+                    }
+
+            }
+
+            &:nth-child(3) {
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+                    margin: 50px;
+
+                    i{
+                        font-size: 50px;
+
+                    }
+
+                    h3{
+                        margin: 10px;
+                    }
+
+            }
+            &:nth-child(4) {
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+                    margin: 50px;
+
+                    i{
+                        font-size: 50px;
+
+                    }
+
+                    h3{
+                        margin: 10px;
+                    }
+
+            }
+        }
+    }
+
+      
+}
+
+
+#projects{
+    background-color:rgba(241, 240, 240, 0.288);
+    height: 80vh;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-rows: 40% auto;
+    width: 100vw;
+    box-sizing: border-box;
+    display: none;
+    
+
+
+
+    .projects__header{
+
+        h2{
+            // text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+    .prjects__conatainer{
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            position: relative;
+            &:nth-child(1){
+                height: 300px;
+                width: 300px;
+                border:solid 2px rgba(52, 39, 77, 0.842);
+                
+            }
+            &:nth-child(2){
+                height: 300px;
+                width: 300px;
+                border:solid 2px rgba(52, 39, 77, 0.842);
+                
+                
+            }
+            &:nth-child(3){
+                height: 300px;
+                width: 300px;
+                border:solid 2px rgba(52, 39, 77, 0.842);
+                
+                
+            }
+            &:nth-child(4){
+                height: 300px;
+                width: 300px;
+                border:solid 2px rgba(52, 39, 77, 0.842);
+                
+            }
+        }
+    }
+}
+
+
+footer{
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin: 0;
+    float: right;
+    height: 100px;
+    display: block;
+    width: 100vw;
+    position: relative;
+    // background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    
+
+    div {
+        position: relative;
+
+
+        top: 10%;
+        transform: translate(0 -50%);
+
+        i{
+            font-size: 30px;
+            padding: 10px 0;
+        }
+
+    }
+   p{
+       border-top: solid 1px rgba(0, 0, 0, 0.11);
+       margin: 0;
+       padding: 0;
+       color: rgba(0, 0, 0, 0.568);
+   }
+}
+
+
+
+
+@keyframes transition{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
