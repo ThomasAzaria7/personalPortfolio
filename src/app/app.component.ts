@@ -9,6 +9,7 @@ import {app} from 'firebase'
 export class AppComponent implements OnInit {
   title = 'professionalPortfolio';
   codeCamp=false
+  toggleMenu =false
   showContent(){
     this.codeCamp=true;
   }
@@ -23,9 +24,15 @@ export class AppComponent implements OnInit {
       })
   }
 
+  toggle(){
+    this.toggleMenu == false ? this.toggleMenu= true: this.toggleMenu=false;
+
+  }
+
   navClick(value){
 
     console.log(value);
+    this.toggleMenu == false ? this.toggleMenu= true: this.toggleMenu=false;
     
 
     if(value =='contact'){

@@ -13,17 +13,36 @@
     <div>
       <h2 [routerLink]="['/']" routerLinkActive="router-link-active" >  PERSONAL</h2>
     </div>
+
+    <div class="mobileNav">
+        <i (click)="toggle()" class="menuBars" class="fas fa-bars"></i>
+    </div>
+
     <div class="menu">
         <ul>
             <li (click)="navClick('background')" ><a [routerLink]="['/']" routerLinkActive="router-link-active" >Background</a></li>
             <li (click)="navClick('award')" ><a routerLink="achievements">Achievements</a></li>
             <li (click)="navClick('work')" ><a routerLink="projects">Projects</a></li>
-            <li (click)="navClick('contact')"><a >Contact</a></li>
             <li (click)="navClick('resume')" class="downloadResume"><a [href]="resumeLink">DOWNLOAD RESUME</a></li>
-            <!-- <li><i class="fas fa-bars"></i></li> -->
-          </ul>
+        </ul>
     </div>
+
+
   </nav>
+
+  <div *ngIf="toggleMenu" class="mobileMenu">
+      <ul>
+          <li (click)="navClick('background')" ><a [routerLink]="['/']" routerLinkActive="router-link-active" >Background</a></li>
+          <li (click)="navClick('award')" ><a routerLink="achievements">Achievements</a></li>
+          <li (click)="navClick('work')" ><a routerLink="projects">Projects</a></li>
+          <li (click)="navClick('resume')" class="downloadResume"><a [href]="resumeLink">DOWNLOAD RESUME</a></li>
+      </ul>
+
+      <div class="photo">
+
+      </div>
+  </div>
+
 
 
   <section id="intro">
@@ -42,6 +61,7 @@
     </div>
     <div class="aboutMe__content">
    
+        <!-- <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     </div>
 
   </section>
@@ -51,14 +71,13 @@
     <div>
       <a href="https://www.linkedin.com/in/thomas07/" target="blank"><i   class="fab fa-linkedin"></i></a>
       <a href="">
-
+          <i style="color: black; margin: 0 5px" class="fab fa-github-square"></i>
       </a>
         
 
         <p>
           Powered by Thomas Azaria
         
-        <span style="float: right">thomas.azaria7@gmail.com </span>
         </p>
 
 
